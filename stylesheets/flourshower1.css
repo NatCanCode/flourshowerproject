@@ -46,7 +46,7 @@ button:hover {
     color: #fcbc25;
     background-color: #0F414F;
     border: 1px solid #0F414F;
-  }
+}
 p{
     font-size: clamp(13px, 10vw, 18px);
 }
@@ -150,7 +150,8 @@ a:hover {
 }
 #newsletter a:hover {
     color: #fcbc25;
-  }
+}
+
 /* SIGNATURE */
 #signature{
     min-width: 100vw;
@@ -174,6 +175,14 @@ a:hover {
     font-size: clamp(13px, 10vw, 18px);
     margin-top: 4%;
     margin-bottom: 6%; 
+}
+#signature a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #0A0402;
+}
+#signature a:hover {
+    color: #fcbc25;
 }
 .signaturebox{
     flex-direction: column;
