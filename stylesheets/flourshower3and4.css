@@ -1,0 +1,465 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.flex{
+    display: flex;
+}
+body{
+    background-color: #FFFFF4;
+    font-family: 'Roboto', sans-serif;
+    color: #0A0402;
+    font-style: regular;
+    font-size: clamp(13px, 10vw, 18px);
+    line-height: 1.3;
+    /* convention du web : séparer paragraphes de 1.3 */
+}
+img{
+    /* garder ratio d'une image  */
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
+}
+div{
+    height: auto;
+}
+button{
+    border-radius: 5px;
+    border: 1px solid #fcbc25;
+    background-color: #FFEEC6;
+    padding: .4% 3% .4% 3%;
+    /* padding: top right bottom left*/
+    transition: background-color .5s;
+    font-family: 'Roboto', sans-serif;
+    color: #0A0402;
+    font-size: clamp(13px, 10vw, 18px);
+    line-height: 30px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+}
+button:hover {
+    color: #fcbc25;
+    background-color: #0F414F;
+    border: 1px solid #0F414F;
+  }
+p{
+    font-size: clamp(13px, 10vw, 18px);
+}
+h1, h2, h3, h4, h5{
+    /* font-family: 'Libre Baskerville', serif; */
+    font-family: 'Italiana', serif;
+    font-weight: 700;
+}
+h1{
+    font-size: clamp(40px, 10vw, 50px);
+}
+h2{
+    font-size: clamp(32px, 10vw, 42px);
+}
+h3{
+    font-size: clamp(26px, 10vw, 36px);
+}
+h5{
+    font-size: clamp(15px, 10vw, 21px);
+}
+a{
+    font-size: clamp(11px, 10vw, 16px);
+}
+.yellow{
+    color: #fcbc25;
+}
+/* HEADER */
+nav{
+    min-width: 100vw;
+    min-height: 10vh;
+    background-color: #0F414F;
+    justify-content: space-between;
+}
+nav .logo{
+    margin-left: 10%;
+}
+.menulinks{
+    justify-content: space-around;
+    align-items: center;
+    gap: 30%;
+    margin-right: 10%;
+}
+nav a{
+    text-decoration: none;
+    color: cornsilk;
+    margin-left: 5%;
+    transition: color .5s;
+}
+a:hover {
+    color: #fcbc25;
+  }
+#title{
+    min-height: 16vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 7vh;
+}
+
+/* MAIN */
+.container{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* BLOCK 1 */
+#block1{
+    display: grid;
+    grid-gap: 5%;
+    margin-top: 15%;
+    margin-bottom: 13%;
+    padding: 2% 5% 9% 5%;
+    /* padding: top right bottom left */
+    background-color: #F0F0ED;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 10% 1fr;
+    grid-template-areas:    
+    "block1title block1title"
+    "block1text block1pic";
+}
+.block1title{
+    grid-area: block1title;
+    margin-top: -4.5%;
+}
+.block1text{
+    grid-area: block1text;
+    flex-direction: column;
+    justify-content: center; 
+}
+.block1pic{
+    grid-area: block1pic;
+}
+#block1 p{
+    margin-bottom: 5%;
+    margin-top: 7%;
+}
+
+/* BLOCK 2 */
+#block2{
+    display: grid;
+    grid-gap: 5%;
+    margin-top: 13%;
+    margin-bottom: 7%;
+    padding: 2% 5% 9% 5%;
+    /* padding: top right bottom left */
+    background-color: #F0F0ED;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 10% 1fr;
+    grid-template-areas:    
+    "block2title block2title"
+    "block2text block2pic";
+}
+.block2title{
+    grid-area: block2title;
+    margin-top: -4.5%;
+}
+.block2text{
+    grid-area: block2text;
+    flex-direction: column;
+    justify-content: center; 
+}
+.block2pic{
+    grid-area: block2pic;
+}
+#block2 p{
+    margin-bottom: 5%;
+    margin-top: 7%;
+}
+
+/* MORE */
+#more{
+    display: grid;
+    grid-gap: 1%;
+    padding: 0% 5% 15% 5%;
+    /* padding: top right bottom left*/
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "morelinks morelinks morelinks morelinks morelinks morelinks"
+    "morecircle1 morecircle2 morecircle3 morecircle4 morecircle5 morecircle6"
+    "morecircle7 morecircle8 . . . .";
+}
+h5{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+main a{
+    font-size: clamp(12px, 10vw, 17px);
+    text-decoration: none;
+    color: gray;
+    transition: color .5s;
+}
+main a:hover {
+    color: #fcbc25;
+  }
+.morelinks{
+    grid-area: morelinks;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 8%;
+}
+.links{
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.circle{
+    border-radius: 50%;
+    max-width: 100%;
+}
+.morecircle1{
+    grid-area: morecircle1;
+}
+.morecircle2{
+    grid-area: morecircle2;
+}
+.morecircle3{
+    grid-area: morecircle3;
+}
+.morecircle4{
+    grid-area: morecircle4;
+}
+.morecircle5{
+    grid-area: morecircle5;
+}
+.morecircle6{
+    grid-area: morecircle6;
+}
+.morecircle7{
+    grid-area: morecircle7;
+}
+.morecircle8{
+    grid-area: morecircle8;
+}
+
+/* FOOTER */
+footer{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+footer a{
+    text-decoration: none;
+    color: #0F414F;
+    margin-top: 8%;
+    transition: color .5s;
+}
+footer a:hover {
+    color: #fcbc25;
+}
+footer p{
+    font-size: clamp(11px, 10vw, 16px);
+}
+.linkedin{
+    max-width: 20%;
+}
+.twitter{
+    max-width: 20%;
+}
+footer{
+    display: grid;
+    grid-gap: 1%;
+    min-width: 100vw;
+	min-height: 40vh;
+    grid-row-gap: 2px #0A0402;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 1fr 1% 1fr;
+    grid-template-areas:    
+    "logo logo . collections bakery button"
+    "line line line line line line"
+    "copyright copyright copyright . . socialmedia";
+}
+.logo{
+	grid-area: logo;
+    align-self: flex-start;
+}
+.collections{
+	grid-area: collections;
+    display: flex;
+    flex-direction: column;
+}
+.bakery{
+    grid-area: bakery;
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    grid-area: button;
+    align-self: flex-start;
+}
+.copyright{
+    grid-area: copyright;
+    align-self: center;
+}
+.socialmedia{
+    grid-area: socialmedia;
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.line{
+    grid-area: line;
+    background-color: grey;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 500px){
+	/*  HEADER */
+    header{
+        height: auto;
+    }
+    nav .logo{
+        margin-left: 5%;
+    }
+    #title{
+        text-align: center;
+        padding: 0 12% 0 12%;
+        /* padding: top right bottom left*/
+    }
+    h1{
+        margin-bottom: 5%;
+        line-height: 1;
+    }
+    #title p{
+        line-height: 1.5;
+    }
+
+    /* BLOCK 1 */
+    #block1{
+        margin-bottom: 15%;
+        grid-gap: .1%;
+	    grid-template-columns: repeat(1, 1fr);
+	    grid-template-rows: 10% 1fr 1.5fr;
+        grid-template-areas:    
+        "block1title"
+        "block1text"
+        "block1pic";
+    }
+    .block1title{
+        margin-top: -6%;
+    }
+
+     /* BLOCK 2 */
+     #block2{
+        margin-bottom: 15%;
+        grid-gap: .1%;
+	    grid-template-columns: repeat(1, 1fr);
+	    grid-template-rows: 10% 1fr 1.5fr;
+        grid-template-areas:    
+        "block2title"
+        "block2text"
+        "block2pic";
+    }
+    .block2title{
+        margin-top: -6%;
+    }
+
+    /* MORE */
+    #more{
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+    "morelinks morelinks morelinks morelinks"
+    ". morecircle1 morecircle2 ."
+    ". morecircle3 morecircle4 ."
+    ". morecircle5 morecircle6 ."
+    ". morecircle7 morecircle8 .";
+    }
+
+    /* FOOTER */
+    footer{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr 10% 1% 1fr;
+        grid-template-areas:    
+        "logo logo . ."
+        "collections bakery button button"
+        ". . . ."
+        "line line line line"
+        "copyright copyright socialmedia socialmedia";
+    }
+}
+@media (min-width: 500px) and (max-width: 750px){
+	/*  HEADER */
+    header{
+        height: auto;
+    }
+    nav .logo{
+        margin-left: 5%;
+    }
+    #title{
+        text-align: center;
+        padding: 0 12% 0 12%;
+        /* padding: top right bottom left*/
+    }
+    h1{
+        margin-bottom: 5%;
+        line-height: 1;
+    }
+    #title p{
+        line-height: 1.5;
+    }
+    
+    /* MORE */
+    #more{
+	    grid-template-columns: repeat(5, 1fr);
+	    grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "morelinks morelinks morelinks morelinks morelinks"
+        ". morecircle1 morecircle2 morecircle3 ."
+        ". morecircle4 morecircle5 morecircle6 ."
+        ". morecircle7 morecircle8 . .";
+    }
+
+    /* BLOCK 1 */
+    #block1{
+        margin-bottom: 15%;
+        grid-gap: .1%;
+	    grid-template-columns: repeat(1, 1fr);
+	    grid-template-rows: 10% 1fr 1.5fr;
+        grid-template-areas:    
+        "block1title"
+        "block1text"
+        "block1pic";
+    }
+    .block1title{
+        margin-top: -7%;
+    }
+
+     /* BLOCK 2 */
+     #block2{
+        margin-bottom: 15%;
+        grid-gap: .1%;
+	    grid-template-columns: repeat(1, 1fr);
+	    grid-template-rows: 10% 1fr 1.5fr;
+        grid-template-areas:    
+        "block2title"
+        "block2text"
+        "block2pic";
+    }
+    .block2title{
+        margin-top: -7%;
+    }
+
+    /* FOOTER */    
+    footer{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr 1% 1fr;
+        grid-template-areas:    
+        "logo logo collections bakery button button"
+        "line line line line line line"
+        "copyright copyright copyright . socialmedia socialmedia";
+    }
+}
