@@ -46,7 +46,10 @@ button:hover {
     color: #fcbc25;
     background-color: #0F414F;
     border: 1px solid #0F414F;
-  }
+}
+button a:hover{
+    color: #fcbc25 !important;
+}
 p{
     font-size: clamp(13px, 10vw, 18px);
 }
@@ -274,16 +277,15 @@ span{
 footer{
     padding-left: 5%;
     padding-right: 5%;
-    margin-top: 10%;
+}
+button a{
+    color: #0A0402 !important;
 }
 footer a{
     text-decoration: none;
-    color: #0A0402;
+    color: #0F414F;
     margin-top: 8%;
     transition: color .5s;
-}
-footer a:hover {
-    color: #fcbc25;
 }
 footer p{
     font-size: clamp(11px, 10vw, 16px);
