@@ -73,6 +73,12 @@ h5{
 a{
     font-size: clamp(11px, 10vw, 16px);
 }
+footer a{
+    text-decoration: none;
+    color: #0F414F;
+    margin-top: 8%;
+    transition: color .5s;
+}
 /* HEADER */
 /* NAV */
 nav{
@@ -87,8 +93,8 @@ nav .logo{
 .menulinks{
     justify-content: space-around;
     align-items: center;
-    gap: 30%;
-    margin-right: 10%;
+    gap: 40%;
+    margin-right: 15%;
 }
 nav a{
     text-decoration: none;
@@ -184,6 +190,9 @@ a:hover {
 #signature a:hover {
     color: #fcbc25;
 }
+button a{
+    color: #0F414F;
+}
 .signaturebox{
     flex-direction: column;
     justify-content: center; 
@@ -227,7 +236,7 @@ footer{
 }
 footer a{
     text-decoration: none;
-    color: #0F414F;
+    color: #0A0402;
     margin-top: 8%;
     transition: color .5s;
 }

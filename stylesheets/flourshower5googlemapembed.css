@@ -89,8 +89,8 @@ nav .logo{
 .menulinks{
     justify-content: space-around;
     align-items: center;
-    gap: 30%;
-    margin-right: 10%;
+    gap: 40%;
+    margin-right: 15%;
 }
 nav a{
     text-decoration: none;
@@ -136,12 +136,13 @@ form > *{
 input, textarea{
     /* resize: vertical; */
     color: grey;
-    border-color: 1px solid #0F414F;
+    /* border-color: 1px solid #0F414F; */
+    border: none;
     border-radius: 3px;
     font-family: 'Roboto', sans-serif;
     background-color: #F0F0ED;
     font-size: clamp(11px, 10vw, 16px);
-    line-height: 30px;
+    line-height: 40px;
     padding-left: 2%;
     padding-right: 2%;
     margin-top: 2%;
@@ -158,6 +159,9 @@ textarea{
     margin-bottom: 2%;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+#contactsection button{
+    margin-top: 4%;
 }
 
 /*  LOCATIONS */
@@ -274,7 +278,7 @@ footer{
 }
 footer a{
     text-decoration: none;
-    color: #0F414F;
+    color: #0A0402;
     margin-top: 8%;
     transition: color .5s;
 }

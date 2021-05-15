@@ -86,8 +86,8 @@ nav .logo{
 .menulinks{
     justify-content: space-around;
     align-items: center;
-    gap: 30%;
-    margin-right: 10%;
+    gap: 40%;
+    margin-right: 15%;
 }
 nav a{
     text-decoration: none;
@@ -252,7 +252,7 @@ footer{
 }
 footer a{
     text-decoration: none;
-    color: #0F414F;
+    color: #0A0402;
     margin-top: 8%;
     transition: color .5s;
 }
@@ -349,7 +349,7 @@ footer{
         "block1pic";
     }
     .block1title{
-        margin-top: -6%;
+        margin-top: -7.5%;
     }
 
      /* BLOCK 2 */
@@ -364,7 +364,7 @@ footer{
         "block2pic";
     }
     .block2title{
-        margin-top: -6%;
+        margin-top: -7.5%;
     }
 
     /* MORE */
@@ -435,7 +435,7 @@ footer{
         "block1pic";
     }
     .block1title{
-        margin-top: -7%;
+        margin-top: -6%;
     }
 
      /* BLOCK 2 */
@@ -450,7 +450,7 @@ footer{
         "block2pic";
     }
     .block2title{
-        margin-top: -7%;
+        margin-top: -6%;
     }
 
     /* FOOTER */    
