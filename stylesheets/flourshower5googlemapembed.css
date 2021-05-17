@@ -255,8 +255,9 @@ span{
     height: 90vh;    
     display: grid;
     grid-gap: 10%;
-    padding: 0% 5% 15% 5%;
+    padding: 0% 5% 12% 5%;
     /* padding: top right bottom left*/
+    margin-bottom: 10%;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 1fr 1fr;
     grid-template-areas:
